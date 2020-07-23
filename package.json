@@ -1,0 +1,23 @@
+{
+  "name": "express_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "liuen",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./server",
+    "test": "export NODE_ENV=test PORT=3000 && mocha ./test/**/*.test.js --exit"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.25",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "power-assert": "^1.6.1"
+  }
+}
